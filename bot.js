@@ -1,3 +1,9 @@
+// Добавьте в начало bot.js
+const express = require('express');
+const app = express();
+app.get('/', (req, res) => res.send('Bot is running'));
+app.listen(process.env.PORT || 3000, () => console.log('Port is open'));
+
 require('dotenv').config();
 const TelegramBot = require('node-telegram-bot-api');
 const questions = require('./questions');
