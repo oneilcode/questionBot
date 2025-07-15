@@ -41,8 +41,4 @@ function sendDailyQuestion() {
 const schedule = require('node-schedule');
 const job = schedule.scheduleJob('0 10 * * *', sendDailyQuestion); // Каждый день в 10:00
 
-console.log(job);
-
-
-console.log('Бот запущен!');
 
