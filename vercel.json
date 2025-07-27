@@ -10,7 +10,12 @@
       {
         "src": "/api",
         "dest": "bot.js",
-        "methods": ["POST", "GET"]
+        "methods": ["POST"]
+      },
+      {
+        "src": "/health",
+        "dest": "bot.js",
+        "methods": ["GET"]
       }
     ]
   }
