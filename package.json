@@ -8,11 +8,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "The bot sends reflective questions once a day, helping you analyze your day, set goals, and improve mindfulness\r Бот раз в день присылает рефлексирующие вопросы, помогая анализировать день, ставить цели и улучшать осознанность.",
   "dependencies": {
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "node-schedule": "^2.1.1",
     "node-telegram-bot-api": "^0.66.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oneilcode/questionBot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oneilcode/questionBot/issues"
+  },
+  "homepage": "https://github.com/oneilcode/questionBot#readme"
 }
