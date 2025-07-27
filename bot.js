@@ -8,9 +8,9 @@ app.get('/health', (req, res) => {
 });
 
 // Запуск на порту из переменной среды (Render сам назначает PORT)
-// app.listen(process.env.PORT || 3000, () => {
-//   console.log(`Server running on port ${process.env.PORT}`);
-// });
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`Server running on port ${process.env.PORT}`);
+});
 
 
 require('dotenv').config();
@@ -18,8 +18,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const questions = require('./questions');
 
 const token = process.env.TELEGRAM_BOT_TOKEN;
-const bot = new TelegramBot(token);
-app.use(express.json());
+const bot = new TelegramBot(token, { polling: true });
 
 // ID вашего чата (узнаете, отправив боту /start)
 let chatId = null;
